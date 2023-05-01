@@ -1,0 +1,731 @@
+{
+	"info": {
+		"_postman_id": "dbbb3677-711f-4057-bc79-3c6aa7e2f379",
+		"name": "TCC-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25870313"
+	},
+	"item": [
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Department/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Department/GetStudents/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students By Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Department/GetStudentsByYear/1/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Department/GetSubjects/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Department/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "AI",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Department"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Software Engineering",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Department/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}Department/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exam",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Exam/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Exam/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get exam marks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Exam/GetMarks/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students Not Take Exam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Exam/GetStudentsNotTakeExam/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students Take Exam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Exam/GetStudentsTakeExam/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "term",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "11/5/2023",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Exam/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "term",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Exam/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}Exam/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Marks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetMarks/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetAllSubjects/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subjects By Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetSubjectsByYear/1/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subjects By Term",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetSubjectsByTerm/1/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subjects By Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetSubjectsByDepartment/1/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Avarage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Student/GetAvarage/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Amani",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Kokeh",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "amani",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amani@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0987654321",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "department_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Student/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "taylor",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "swift",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "taylorswift13",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "taylorswift@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0987654321",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "department_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Student/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}Student/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ExamMark",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}ExamMark/"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "exam_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "mark",
+									"value": "89",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}ExamMark/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "exam_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "student_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "mark",
+									"value": "89",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}ExamMark/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}ExamMark/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/GetByDepartment/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/GetByYear/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Term",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/GetByTerm/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lectures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}Subject/GetLectures/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Math",
+									"type": "text"
+								},
+								{
+									"key": "dept_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "term",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "min_degree",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Subject/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Math",
+									"type": "text"
+								},
+								{
+									"key": "dept_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "term",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "min_degree",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}Subject/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}Subject/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject Lectures",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}SubjectLecture/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host-api}}SubjectLecture/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "this is a title",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "this is a content",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}SubjectLecture/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subject_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "this is a new title",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "this is a new content",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host-api}}SubjectLecture/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host-api}}SubjectLecture/1"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "host-api",
+			"value": "https://localhost:7159/api/"
+		}
+	]
+}
